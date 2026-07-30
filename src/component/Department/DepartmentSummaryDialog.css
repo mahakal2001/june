@@ -1,0 +1,167 @@
+.Departmentcontent{
+    max-width: 100%;
+    height: auto !important;
+    width: 70% !important;
+    place-content: center !important;
+}
+
+.deptpaginationt{
+    position: relative;
+    right: 14em;
+}
+
+.revenueempty .deptpaginationt {
+    right: 6em;
+}
+
+@media print {
+
+   body{
+        margin:0;
+        padding:0;
+        background:white;
+        font-family:Arial,Helvetica,sans-serif;
+        font-size:11px;
+        color:#000;
+    }
+
+    .Departmentcontent{
+        border: none !important;
+        box-shadow: none !important;
+        width: 80% !important;
+    }
+
+    .print-tabled{
+    max-width: 100%;
+    width: auto !important;
+    table-layout:fixed;
+    border-collapse:collapse;
+}
+
+.print-tabled th:nth-child(1),
+.print-tabled td:nth-child(1){
+    width: 48% !important;
+}
+
+.print-tabled th:nth-child(2),
+.print-tabled td:nth-child(2){
+    width:12%;
+}
+
+.print-tabled th:nth-child(3),
+.print-tabled td:nth-child(3){
+    width:12%;
+}
+
+.print-tabled th:nth-child(4),
+.print-tabled td:nth-child(4){
+    width:12%;
+}
+
+.print-tabled th:nth-child(5),
+.print-tabled td:nth-child(5){
+    width: 12%;
+}
+
+.print-tabled th:nth-child(6),
+.print-tabled td:nth-child(6){
+    width: 12%;
+}
+
+.print-tabled th:nth-child(7),
+.print-tabled td:nth-child(7){
+    width: 12%;
+}
+
+.print-tabled th:nth-child(8),
+.print-tabled td:nth-child(8){
+    width: 12%;
+}
+
+
+    @page{
+        size:A4 landscape;
+    }
+    .Dialoga{
+        max-height:none !important;
+        overflow: hidden !important;
+        border:none !important;
+        box-shadow:none !important;
+    }
+
+    .print-title{
+        position: sticky;
+        top: 4em;
+        text-align: center;
+    }
+
+    .searchDepartmenta,
+    .paginationa,
+    button,
+    .print\\:hidden{
+        display:none !important;
+    }
+
+    .report-table th{
+      background:#0f4c81;
+      position:static!important;
+      color:white;
+      padding:8px;
+      border:1px solid #999;
+      font-size:11px;
+    }
+
+    .report-table tr{
+        page-break-inside:avoid;
+    }
+
+    .report-table td{
+       border:1px solid #999;
+       padding: 7px;
+       vertical-align:top;
+       word-break:break-word;
+    }
+
+    .report-table thead{
+     display:table-header-group;
+    }
+
+
+ [data-slot="dialog-close"]{
+    display: none !important;
+  }
+
+  [data-radix-popper-content-wrapper]{
+      display:none !important;
+  }
+
+  button{
+      display:none !important;
+  }
+    /* Hide Dialog Close Button */
+  [data-slot="dialog-close"]{
+      display:none !important;
+  }
+
+  /* Hide Dropdown Menus */
+  [data-radix-popper-content-wrapper]{
+      display:none !important;
+  }
+
+  /* Hide Tooltips */
+  [role="tooltip"]{
+      display:none !important;
+  }
+
+  .searchDepartmenta,
+  .alertP,
+  .paginationa,
+   button,
+   .Alertd .Switch,
+   .Live,
+   .ExportMenu{
+      display:none!important;
+   }
+
+
+}

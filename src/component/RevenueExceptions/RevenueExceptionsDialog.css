@@ -1,0 +1,143 @@
+
+
+.Dialog{
+    max-width: 100%;
+    width: 58.6%;
+}
+
+.DialogH{
+    padding: 0.6em 1em;
+}
+
+.searchDepartment{
+    margin-top: -0.6em;
+    padding: 1em 0.2em;
+}
+
+.DialogCell1{
+    position: relative;
+    left: -0.8em;
+}
+
+.revenuePrint-table{
+    width:100% !important;
+    table-layout:fixed;
+    border-collapse:collapse;
+}
+
+.revenuePrint-table th:nth-child(1),
+.revenuePrint-table td:nth-child(1){
+    width:20%;
+}
+
+.revenuePrint-table th:nth-child(2),
+.revenuePrint-table td:nth-child(2){
+    width:15%;
+}
+
+.revenuePrint-table th:nth-child(3),
+.revenuePrint-table td:nth-child(3){
+    width:15%;
+}
+
+.revenuePrint-table th:nth-child(4),
+.revenuePrint-table td:nth-child(4){
+    width:14%;
+}
+
+.revenuePrint-table th:nth-child(5),
+.revenuePrint-table td:nth-child(5){
+    width:14%;
+}
+
+
+.pagination{
+    padding: 0.6em 0.2em;
+}
+
+.peginationButton{
+    position: relative;
+    right: 2em;
+}
+
+@media print {
+
+  body {
+    background: white !important;
+    margin: 0;
+  }
+
+ 
+
+  table{
+    table-layout:fixed;
+    border-collapse:collapse;
+  }
+
+  .Dialog{
+        max-height:none !important;
+        overflow:visible !important;
+        border:none !important;
+        box-shadow:none !important;
+    }
+
+
+  thead{
+    display:table-header-group;
+  }
+
+  tr{
+    page-break-inside:avoid;
+  }
+
+  th,
+  td{
+    border:1px solid #d1d5db;
+    padding:8px;
+    font-size:11px;
+    word-break:break-word;
+    text-align:center;
+  }
+
+  th{
+    background:#f3f4f6 !important;
+    color:#000 !important;
+    font-weight:700;
+  }
+
+  img{
+    width:32px;
+    height:32px;
+  }
+
+  button{
+    display:none !important;
+  }
+
+
+ [data-slot="dialog-close"]{
+    display: none !important;
+  }
+
+  [data-radix-popper-content-wrapper]{
+      display:none !important;
+  }
+
+  button{
+      display:none !important;
+  }
+    /* Hide Dialog Close Button */
+  [data-slot="dialog-close"]{
+      display:none !important;
+  }
+
+  /* Hide Dropdown Menus */
+  [data-radix-popper-content-wrapper]{
+      display:none !important;
+  }
+
+  /* Hide Tooltips */
+  [role="tooltip"]{
+      display:none !important;
+  }
+}

@@ -1,0 +1,48 @@
+
+.lineChart{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2em;
+}
+
+.table{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.sub-table{
+   margin-top: 1.4em;
+   width: 100%;
+   padding-bottom: 2em;
+}
+
+.other-sections{
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 1.6em;
+}
+
+@media only screen and (max-width: 1445px) {
+  .subChart{
+        position: relative;
+        transform: translate(50%, 0);
+    }
+
+    .table{
+      justify-content: center;
+    }
+
+    .sub-table{
+        position: relative;
+        left: 50%;
+        transform: translate(-33.4%, 0);
+    }
+
+    .other-sections{
+        justify-content: center;
+    }
+}
+ 

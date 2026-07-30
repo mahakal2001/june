@@ -1,0 +1,12 @@
+
+.DropContent{
+   width: 160px !important;
+}
+
+@media print {
+
+  [data-radix-popper-content-wrapper]{
+      visibility:hidden !important;
+  }
+
+}

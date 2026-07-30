@@ -1,0 +1,35 @@
+.DailyDistributionCard {
+   top: 4.6em;
+    width: 520px;
+    height: auto !important;
+}
+
+.VisitChart{
+    width:520px;
+    height:260px;
+}
+
+.recharts-sector{
+    transition:all .35s ease;
+    cursor:pointer;
+}
+
+.recharts-sector:hover{
+    filter:brightness(1.08);
+    transform:scale(1.02);
+    transform-origin:center;
+}
+
+.recharts-tooltip-wrapper{
+    outline:none;
+}
+
+
+@media only screen and (max-width: 1445px) {
+    .distributionpie{
+       display: flex;
+       flex-wrap: wrap;
+       gap:6px;
+    }
+
+}

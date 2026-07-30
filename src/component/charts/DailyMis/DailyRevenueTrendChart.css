@@ -1,0 +1,22 @@
+.Dailychartcard{
+    top: 4.6em;
+    width: 520px;
+    height: 440px !important;
+}
+
+.DailyChart{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 280px;
+}
+
+.Dailycharttext{
+    width: 800px;
+    padding-left: 1em;
+}
+
+.DailyY{
+    width: 100% !important;
+    margin: 0 !important;
+}

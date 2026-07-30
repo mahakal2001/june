@@ -1,0 +1,18 @@
+
+
+@media only screen and (max-width: 1445px) {
+  .level{
+     position: relative;
+     transform: translate(0.4em, -3em);
+   }
+   .percentageText{
+    font-size: 30px;
+   }
+   .collected{
+    position: relative;
+    top: -2em !important;
+   }
+   .collectedText{
+    font-size: 20px;
+   }
+}

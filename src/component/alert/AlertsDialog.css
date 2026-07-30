@@ -1,0 +1,183 @@
+.Alertd{
+    max-width: 100%;
+    height: auto !important;
+    width: 50% !important;
+    place-content: center !important;
+}
+
+.print-only{
+    display:none;
+}
+
+.AlertsH{
+    padding: 0.2em 0.4em;
+}
+
+.searchDepartmenta{
+    margin-top: -0.6em;
+    padding: 0.6em 0.2em;
+}
+
+.alertP{
+    margin-bottom: 0.6em;
+}
+
+.print-tablea{
+    max-width: 100%;
+    width: auto !important;
+    table-layout:fixed;
+    border-collapse:collapse;
+}
+
+.print-tablea th:nth-child(1),
+.print-tablea td:nth-child(1){
+    width: 48% !important;
+}
+
+.print-tablea th:nth-child(2),
+.print-tablea td:nth-child(2){
+    width:10%;
+}
+
+.print-tablea th:nth-child(3),
+.print-tablea td:nth-child(3){
+    width:12%;
+}
+
+.print-tablea th:nth-child(4),
+.print-tablea td:nth-child(4){
+    width:10%;
+}
+
+.print-tablea th:nth-child(5),
+.print-tablea td:nth-child(5){
+    width:auto;
+}
+
+
+.paginationa{
+    position: relative;
+    top: 0.2em;
+    padding: 0.2em 0.2em;
+}
+
+.peginationButtona{
+    position: relative;
+    right: 2em;
+}
+
+
+@media print {
+
+   body{
+        margin:0;
+        padding:0;
+        background:white;
+        font-family:Arial,Helvetica,sans-serif;
+        font-size:11px;
+        color:#000;
+    }
+
+    .screen-only{
+        display:none !important;
+    }
+
+    .print-only{
+    display:block !important;
+    }
+
+
+    @page{
+        size:A4 landscape;
+    }
+    .Dialoga{
+        max-height:none !important;
+        overflow: hidden !important;
+        border:none !important;
+        box-shadow:none !important;
+    }
+
+    .print-title{
+        position: sticky;
+        top: 4em;
+        text-align: center;
+    }
+
+    .report-table{
+        width:100%;
+        position: relative;
+        top: 6em;
+        border-collapse:collapse;
+        table-layout:fixed;
+    }
+
+    .searchDepartmenta,
+    .paginationa,
+    button,
+    .print\\:hidden{
+        display:none !important;
+    }
+
+    .report-table th{
+      background:#0f4c81;
+      position:static!important;
+      color:white;
+      padding:8px;
+      border:1px solid #999;
+      font-size:11px;
+    }
+
+    .report-table tr{
+        page-break-inside:avoid;
+    }
+
+    .report-table td{
+       border:1px solid #999;
+       padding: 7px;
+       vertical-align:top;
+       word-break:break-word;
+    }
+
+    .report-table thead{
+     display:table-header-group;
+    }
+
+
+ [data-slot="dialog-close"]{
+    display: none !important;
+  }
+
+  [data-radix-popper-content-wrapper]{
+      display:none !important;
+  }
+
+  button{
+      display:none !important;
+  }
+    /* Hide Dialog Close Button */
+  [data-slot="dialog-close"]{
+      display:none !important;
+  }
+
+  /* Hide Dropdown Menus */
+  [data-radix-popper-content-wrapper]{
+      display:none !important;
+  }
+
+  /* Hide Tooltips */
+  [role="tooltip"]{
+      display:none !important;
+  }
+
+  .searchDepartmenta,
+  .alertP,
+  .paginationa,
+   button,
+   .Alertd .Switch,
+   .Live,
+   .ExportMenu{
+      display:none!important;
+   }
+
+
+}

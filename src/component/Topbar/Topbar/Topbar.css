@@ -1,0 +1,11 @@
+
+
+.header{
+    height: auto;
+    overflow: hidden;
+}
+
+.search{
+    position: relative;
+    left: -1em;
+}

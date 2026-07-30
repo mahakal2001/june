@@ -1,0 +1,16 @@
+
+.DailyPaymentCard {
+   top: 4.6em;
+    width: 520px;
+    height: auto !important;
+}
+
+
+@media only screen and (max-width: 1445px) {
+    .paymentpie{
+       display: flex;
+       flex-wrap: wrap;
+       gap:6px;
+    }
+
+}

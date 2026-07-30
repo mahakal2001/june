@@ -1,0 +1,145 @@
+
+
+.Dialogi{
+    max-width: 100%;
+    width: 53.6% !important;
+    place-content: center !important;
+}
+
+.DialogiH{
+    padding: 0.6em 0.4em;
+}
+
+.searchDepartmenti{
+    margin-top: -0.6em;
+    padding: 1em 0.2em;
+}
+
+.DialogCell1{
+    position: relative;
+    left: -0.8em;
+}
+
+.print-tablei{
+    width:auto;
+    table-layout:fixed;
+    border-collapse:collapse;
+}
+
+.print-tablei th:nth-child(1),
+.print-tablei td:nth-child(1){
+    width:36%;
+}
+
+.print-tablei th:nth-child(2),
+.print-tablei td:nth-child(2){
+    width:22%;
+}
+
+.print-tablei th:nth-child(3),
+.print-tablei td:nth-child(3){
+    width:14%;
+}
+
+.print-tablei th:nth-child(4),
+.print-tablei td:nth-child(4){
+    width:18%;
+}
+
+.print-tablei th:nth-child(5),
+.print-tablei td:nth-child(5){
+    width:14%;
+}
+
+
+.paginationi{
+    padding: 0.6em 0.2em;
+}
+
+.peginationButtoni{
+    position: relative;
+    right: 2em;
+}
+
+
+@media print {
+
+   body{
+        margin:0;
+        padding:0;
+        background:white;
+    }
+
+    @page{
+        size:A4 landscape;
+    }
+    .Dialogi{
+        max-height:none !important;
+        overflow:visible !important;
+        border:none !important;
+        box-shadow:none !important;
+    }
+
+    .searchDepartmenti,
+    .paginationi,
+    button,
+    .print\\:hidden{
+        display:none !important;
+    }
+
+    table{
+        width:100%;
+        table-layout:fixed;
+        border-collapse:collapse;
+        page-break-inside:auto;
+    }
+
+    thead{
+        display:table-header-group;
+    }
+
+    tr{
+        page-break-inside:avoid;
+    }
+
+    th,
+    td{
+        border:1px solid #d1d5db;
+        padding:12px;
+        vertical-align:middle;
+        word-break:break-word;
+    }
+
+    img{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+    }
+
+ [data-slot="dialog-close"]{
+    display: none !important;
+  }
+
+  [data-radix-popper-content-wrapper]{
+      display:none !important;
+  }
+
+  button{
+      display:none !important;
+  }
+    /* Hide Dialog Close Button */
+  [data-slot="dialog-close"]{
+      display:none !important;
+  }
+
+  /* Hide Dropdown Menus */
+  [data-radix-popper-content-wrapper]{
+      display:none !important;
+  }
+
+  /* Hide Tooltips */
+  [role="tooltip"]{
+      display:none !important;
+  }
+
+}

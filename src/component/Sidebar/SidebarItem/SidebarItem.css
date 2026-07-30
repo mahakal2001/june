@@ -1,0 +1,22 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebar-item{
+    display: flex;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+    margin-top: 0.4em;
+}
+
+.icon{
+    transition: transform 0.8s ease-in-out;
+    font-weight: 600;
+}
+
+.icon:hover{
+   transform: scale(1.2);
+}

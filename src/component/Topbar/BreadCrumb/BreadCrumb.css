@@ -1,0 +1,13 @@
+
+.breadcrumblist{
+    line-height: 6px !important;
+}
+
+.breadcrumb{
+    font-weight: 700;
+}
+
+.sub-crumbs{
+    font-size: 11.6px;
+    font-weight: 500;
+}

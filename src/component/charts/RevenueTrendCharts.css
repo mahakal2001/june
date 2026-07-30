@@ -1,0 +1,15 @@
+
+.selector{
+    min-width: 80px !important;
+}
+
+.foot-note{
+    margin-top: 2em;
+    gap: 6em;
+}
+
+@media only screen and (max-width: 1445px) {
+    .chartContainer{
+        height: 300px !important;
+    }
+}

@@ -1,0 +1,12 @@
+
+.cards{
+    width: 100% !important;
+    border: 1px;
+    border-radius: 8px;
+    height: 158px !important;
+    place-content: center;
+}
+
+.card-title{
+    margin-bottom: .2em;
+}

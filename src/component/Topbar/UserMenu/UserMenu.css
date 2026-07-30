@@ -1,0 +1,17 @@
+
+.dropdown-menu{
+    position: relative;
+    width: 176px;
+    border: 1px solid rgba(216, 216, 216, 0.858);
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(188, 188, 188, 0.858);
+}
+
+.dropdown-txt1{
+    font-size: 13.6px;
+    font-weight: 700;
+}
+
+.submenu-txt{
+    font-weight: 500;
+}
