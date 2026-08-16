@@ -167,7 +167,7 @@ export default function DailyRevenueTrendChart() {
            font-semibold mb-2">
             ₹ in Lakhs
            </p>
-           <div className="rounded-sm bg-gradient-to-b from-blue-50/40 to-white">
+           <div className="rounded-sm bg-linear-to-b from-blue-50/40 to-white">
           <ResponsiveContainer width="100%" height="100%">
             
 
