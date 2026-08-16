@@ -63,7 +63,7 @@ import { exportExcel } from "@/lib/RevenueExport/exportExcel";
 
 import { exportWhatsapp } from "@/lib/RevenueExport/exportWhatsapp";
 
-import './RevenueExceptionsDialog.css'
+import './RevenueExceptionsDialog.css';
 
 type Props = {
   open: boolean;
@@ -265,7 +265,7 @@ export default function RevenueExceptionsDialog({
           />
           <Select value={department} onValueChange={(value) => {
             setDepartment(value || "all");  setPage(1);}}>
-            <SelectTrigger className="md:w-20 rounded-sm">
+            <SelectTrigger className="md:w-28 rounded-sm">
               <SelectValue className="pt-1 pb-1" placeholder="Department" />
             </SelectTrigger>
             <SelectContent>
@@ -283,10 +283,10 @@ export default function RevenueExceptionsDialog({
           <Select value={status} onValueChange={(value) => {
             setStatus(value || "all");
             setPage(1);}}>
-            <SelectTrigger className="md:w-20 rounded-sm">
+            <SelectTrigger className="md:w-28 rounded-sm">
               <SelectValue className="pt-1 pb-1" placeholder="Status" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="revenue-statusfil">
               <SelectItem value="all">
                 All Status
               </SelectItem>
@@ -299,6 +299,29 @@ export default function RevenueExceptionsDialog({
 
             </SelectContent>
           </Select>
+
+          <Button
+          variant="outline"
+          className="rounded-sm"
+          onClick={() => {
+          setSortAscending(!sortAscending);
+          setPage(1);
+          }}>
+            Sort
+
+            {sortAscending ? (
+            <ArrowUp className="ml-2 h-4 w-4" />
+            ) : (
+             <ArrowDown className="ml-2 h-4 w-4" />
+            )}
+          </Button>
+                                   
+          <Button variant="ghost"
+          onClick={resetFilters} className="rounded-sm"
+          >
+            Reset Filters
+          </Button>
+
 
         </div>
         
@@ -434,7 +457,7 @@ export default function RevenueExceptionsDialog({
           </div>
           <div className="space-x-2">
             <Button variant="outline" disabled={page === 1} onClick={() => setPage(page - 1)}
-            className="rounded-sm">
+            className="PaginationR rounded-sm">
               Previous
             </Button>
             <Button variant="outline" disabled={page === totalPages}

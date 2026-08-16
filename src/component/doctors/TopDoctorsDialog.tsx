@@ -238,11 +238,11 @@ export default function TopDoctorsDialog({
 
            <Input placeholder="Search doctor..." value={search} 
            onChange={(e) => {setSearch(e.target.value); setPage(1);}}
-           className="px-3 pt-1 pb-1 text-sm md:w-60 rounded-sm" />
+           className="px-3 pt-1 pb-1 text-sm md:w-48 rounded-sm" />
 
            <Select value={department} onValueChange={(value) => 
              {setDepartment(value ?? "all"); setPage(1);}}>
-               <SelectTrigger className="md:w-20 rounded-sm">
+               <SelectTrigger className="md:w-24 rounded-sm">
                    <SelectValue placeholder="Department" />
                </SelectTrigger>
 
@@ -259,11 +259,11 @@ export default function TopDoctorsDialog({
            </Select>
 
            <Select value={rating} onValueChange={(value) => {setRating(value ?? "all"); setPage(1);}}> 
-               <SelectTrigger className="md:w-20 rounded-sm">
+               <SelectTrigger className="md:w-24 rounded-sm">
                    <SelectValue placeholder="Rating" />
                </SelectTrigger>
 
-               <SelectContent>
+               <SelectContent className="doctor-ratingfil">
                    <SelectItem value="all">
                        All Ratings
                    </SelectItem>
@@ -281,6 +281,28 @@ export default function TopDoctorsDialog({
                    </SelectItem>
                </SelectContent>
            </Select>
+
+           <Button
+            variant="outline"
+            className="rounded-sm"
+            onClick={() => {
+            setSortAscending(!sortAscending);
+            setPage(1);
+            }}>
+              Sort
+
+              {sortAscending ? (
+                <ArrowUp className="ml-2 h-4 w-4" />
+                ) : (
+                <ArrowDown className="ml-2 h-4 w-4" />
+              )}
+            </Button>
+                                   
+            <Button variant="ghost"
+            onClick={resetFilters} className="rounded-sm"
+            >
+              Reset Filters
+            </Button>
 
         </div>
 
@@ -384,7 +406,7 @@ export default function TopDoctorsDialog({
           </div>
         </div>
 
-       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:hidden">
+       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:hidden print:hidden">
          {paginatedDoctors.map((doctor)=>(
             <DoctorMobileCard key={doctor.id} doctor={doctor} onView={handleView} />
          ))}

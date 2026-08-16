@@ -1,0 +1,276 @@
+.daily-MIScard{
+
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    width:100%;
+}
+
+/* KPI */
+
+.dailyMISKpi-Section{
+
+    width:100%;
+}
+
+/* ===========================
+        ROW 1
+=========================== */
+
+.dailyMIS-row1{
+    display:flex;
+    gap:24px;
+    align-items: center;
+}
+
+.dailyMISdepartment-card{
+    flex:2.1;
+    min-width:0;
+}
+
+.dailyMIS-row1 .departmentSummerycard{
+    height: 520px;
+}
+
+.chart-column{
+
+    flex:1.4;
+    display:flex;
+}
+
+.dailyMIStrend-card{
+
+    flex:1;
+}
+
+.chart-column .Dailychartcard{
+    width: 680px;
+    height: 520px;
+}
+
+.right-column .paypiechart {
+    width: 240px !important;
+}
+
+.right-column .VisitChart{
+    width: 240px !important;
+}
+
+.right-column{
+
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.dailyMISdistribution-card,
+.dailyMISpayment-card{
+
+    flex:1;
+}
+
+/* ===========================
+        ROW 2
+=========================== */
+
+.dailyMIS-row2{
+
+    display:flex;
+    gap:24px;
+    align-items:stretch;
+}
+
+.dailyMISvariance-card{
+
+    flex:1.3;
+}
+
+.dailyMISdoctor-card .doctortable-card{
+    top: 0;
+}
+
+.dailyMISdoctor-card{
+
+    flex:1.5;
+}
+
+.dailyMISpending-card{
+
+    flex:.9;
+}
+
+/* ===========================
+        ROW 3
+=========================== */
+
+.dailyMIS-row3{
+    display:flex;
+    gap:24px;
+}
+
+.dailyMISalerts-card{
+    flex:1.6;
+}
+
+.dailyMISquicklinks-card{
+    flex:1.3;
+}
+
+.dailyMISsystem-card{
+    flex:1;
+}
+
+.dailyMIS-row3 .systemInformation{
+    height: 220px;
+}
+
+/* ===========================
+      Equal Heights
+=========================== */
+
+.dailyMISdepartment-card>*,
+.dailyMIStrend-card>*,
+.dailyMISdistribution-card>*,
+.dailyMISpayment-card>*,
+.dailyMISvariance-card>*,
+.dailyMISdoctor-card>*,
+.dailyMISpending-card>*,
+.dailyMISalerts-card>*,
+.dailyMISquicklinks-card>*,
+.dailyMISsystem-card>*{
+    height:100%;
+}
+
+/* ===========================
+      Laptop
+=========================== */
+
+@media only screen and (max-width: 1445px){
+
+.dailyMIS-row1{
+    flex-wrap:wrap;
+}
+
+.dailyMISdepartment-card{
+    flex:100%;
+}
+
+.chart-column{
+    flex:1;
+}
+
+.chart-column .Dailychartcard{
+    width: 540px;
+}
+
+.right-column{
+    flex:1;
+}
+
+.right-column .DailyDistributionCard {
+    top: 0em;
+}
+
+.right-column .DailyPaymentCard{
+   height: 480px;
+}
+
+.dailyMIS-row2{
+
+    flex-wrap:wrap;
+}
+
+.dailyMISvariance-card,
+.dailyMISdoctor-card{
+
+    flex:1;
+}
+
+.dailyMISpending-card{
+
+    flex:100%;
+}
+
+.dailyMIS-row3{
+    flex-wrap:wrap; 
+    justify-content: center !important;
+}
+
+.dailyMISalerts-card{
+    flex:100%;
+}
+
+.dailyMISalerts-card .alerts-card{
+    width: 100%;
+}
+
+
+.dailyMIS-row3 .systemInformation{
+    width: 100%;
+    height: auto;
+}
+
+
+.dailyMISquicklinks-card,
+.dailyMISsystem-card{
+    flex:80%;
+    height: 80%;
+}
+
+}
+
+/* ===========================
+      Tablet
+=========================== */
+
+@media(max-width:1024px){
+
+.dailyMIS-row1{
+    align-items: stretch;
+}
+
+.dailyMIS-row1,
+.dailyMIS-row2,
+.dailyMIS-row3{
+    flex-direction:column;
+}
+
+.right-column{
+
+    flex-direction:row;
+}
+
+.distribution-card,
+.payment-card{
+
+    flex:1;
+}
+
+}
+
+/* ===========================
+      Mobile
+=========================== */
+
+@media(max-width:768px){
+
+.daily-MIScard{
+
+    gap:16px;
+}
+
+.dailyMIS-row1,
+.dailyMIS-row2,
+.dailyMIS-row3{
+
+    gap:16px;
+}
+
+.right-column{
+
+    flex-direction:column;
+    gap:16px;
+}
+
+}

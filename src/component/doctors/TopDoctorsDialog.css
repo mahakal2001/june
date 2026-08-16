@@ -20,6 +20,10 @@
     left: -0.8em;
 }
 
+.doctor-ratingfil{
+    min-width: 108px !important;
+}
+
 .print-table{
     width:100%;
     table-layout:fixed;

@@ -62,6 +62,7 @@ export default function InsuranceClaimDialog({
     const [statusFilter, setStatusFilter] = useState("all");
 
     const [sortAscending, setSortAscending] = useState(true);
+    
 
     const [page, setPage] = useState(1);
     const pageSize = 4;
@@ -197,11 +198,11 @@ export default function InsuranceClaimDialog({
                      lg:items-center print:hidden">
                         <Input placeholder="Search claim..." value={search} 
                         onChange={(e) => {setSearch(e.target.value); setPage(1);}}
-                        className="md:w-42 rounded-sm" />
+                        className="md:w-52 rounded-sm" />
                         <Select value={statusFilter} onValueChange={(value) => {
                             setStatusFilter(value ?? "all"); setPage(1);
                         }}>
-                            <SelectTrigger className="md:w-20 rounded-sm">
+                            <SelectTrigger className="md:w-34 rounded-sm">
                                 <SelectValue placeholder="Claim Status" />
                             </SelectTrigger>
                             <SelectContent>
@@ -215,8 +216,30 @@ export default function InsuranceClaimDialog({
                                  ))}
                             </SelectContent>
                         </Select>
+                        <Button
+                        variant="outline"
+                        className="rounded-sm"
+                        onClick={() => {
+                            setSortAscending(!sortAscending);
+                            setPage(1);
+                        }}
+                        >
+                            Sort
+                        
+                           {sortAscending ? (
+                              <ArrowUp className="ml-2 h-4 w-4" />
+                            ) : (
+                              <ArrowDown className="ml-2 h-4 w-4" />
+                            )}
+                        </Button>
+                        
+                        <Button variant="ghost"
+                        onClick={resetFilters} className="rounded-sm"
+                        >
+                            Reset Filters
+                        </Button>
                     </div>
-                    <div className="rounded-sm border overflow-auto max-h-[600px]">
+                    <div className="rounded-sm border overflow-auto max-h-150">
                         {filteredClaims.length === 0 ? (
                             <RevenueEmptyState message="No claims found."
                             onReset={resetFilters} />
@@ -319,7 +342,7 @@ export default function InsuranceClaimDialog({
                             </Button>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:hidden mt-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:hidden mt-4 print:hidden">
                         {paginatedClaims.map((claim) => (
                             <InsuranceClaimMobileCard
                                 key={claim.id}

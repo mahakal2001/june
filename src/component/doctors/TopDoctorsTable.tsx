@@ -30,7 +30,7 @@ export default function TopDoctorsTable(){
 return(
   
     <>
-      <Card className="card mx-auto shadow-sm rounded-sm border relative top-6">
+      <Card className="doctortable-card mx-auto shadow-sm rounded-sm border relative top-6">
 
     <CardHeader className="flex flex-row items-center justify-between">
 

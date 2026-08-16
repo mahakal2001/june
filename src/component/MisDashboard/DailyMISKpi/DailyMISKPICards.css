@@ -1,0 +1,6 @@
+
+@media only screen and (max-width: 1445px) {
+    .dailykpicards-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

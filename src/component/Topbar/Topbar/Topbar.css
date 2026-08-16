@@ -1,5 +1,10 @@
 
 
+.menu-bar{
+    position: relative;
+    left: -0.8em;
+}
+
 .header{
     height: auto;
     overflow: hidden;

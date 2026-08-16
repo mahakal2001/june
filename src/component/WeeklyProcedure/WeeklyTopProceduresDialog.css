@@ -1,0 +1,16 @@
+
+.WeeklyProcedureDialog-dialog{
+  max-width: 100%;
+  width: 880px !important;
+}
+
+.WeeklyProceduredialogTables-section{
+    margin: 0 auto !important;
+    width: 100%;
+    padding: 0 2em;
+}
+
+.WeeklyProcedure-Table{
+    max-width: 100%;
+    width: 100% !important;
+}

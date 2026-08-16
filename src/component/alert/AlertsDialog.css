@@ -1,9 +1,14 @@
 .Alertd{
     max-width: 100%;
     height: auto !important;
-    width: 50% !important;
+    width: 76% !important;
     place-content: center !important;
 }
+
+.screen-only{
+display:block;
+}
+
 
 .print-only{
     display:none;
@@ -24,7 +29,7 @@
 
 .print-tablea{
     max-width: 100%;
-    width: auto !important;
+    width: 100% !important;
     table-layout:fixed;
     border-collapse:collapse;
 }
@@ -78,6 +83,15 @@
         color:#000;
     }
 
+    .Alertd{
+      width:100% !important;
+      height:auto !important;
+      overflow:visible !important;
+      box-shadow:none !important;
+      border:none !important;
+      padding:0 !important;
+    }
+
     .screen-only{
         display:none !important;
     }
@@ -87,12 +101,11 @@
     }
 
 
+
     @page{
         size:A4 landscape;
     }
     .Dialoga{
-        max-height:none !important;
-        overflow: hidden !important;
         border:none !important;
         box-shadow:none !important;
     }
@@ -106,7 +119,7 @@
     .report-table{
         width:100%;
         position: relative;
-        top: 6em;
+        top: 1.6em;
         border-collapse:collapse;
         table-layout:fixed;
     }

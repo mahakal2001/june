@@ -1,0 +1,7 @@
+.monthly-mis-kpi-scroll {
+  width: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch !important;
+}
+

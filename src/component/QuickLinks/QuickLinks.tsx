@@ -79,7 +79,7 @@ export default function QuickLinks() {
   }, [visibleLinks, pinned]);
 
   return (
-    <Card className="qickCard rounded-sm mx-6 mb-6 border bg-white shadow-sm">
+    <Card className="quickCard rounded-sm mx-6 mb-6 border bg-white shadow-sm">
 
       {/* Header */}
 

@@ -1,13 +1,71 @@
-
-.breadcrumblist{
-    line-height: 6px !important;
+.dashboard-page-title{
+    font-size: 20px !important;
 }
 
-.breadcrumb{
-    font-weight: 700;
+.dashboard-breadcrumb-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  gap: 4px;
 }
 
-.sub-crumbs{
-    font-size: 11.6px;
-    font-weight: 500;
+.dashboard-page-title {
+  margin: 0;
+  color: #111b50;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+}
+
+.dashboard-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  color: #64748b;
+}
+
+.dashboard-breadcrumb-link {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease;
+}
+
+.dashboard-breadcrumb-link:hover {
+  color: #1e3a8a;
+}
+
+.dashboard-breadcrumb-current {
+  color: #475569;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.dashboard-breadcrumb-separator {
+  color: #94a3b8;
+}
+
+.dashboard-breadcrumb-separator svg {
+  width: 13px;
+  height: 13px;
+  stroke-width: 2;
+}
+
+@media (max-width: 768px) {
+  .dashboard-page-title {
+    font-size: 20px;
+  }
+
+  .dashboard-breadcrumb-link,
+  .dashboard-breadcrumb-current {
+    font-size: 12px;
+  }
 }

@@ -66,7 +66,6 @@ export default function QuickLinkCard({
             group
             cursor-pointer
             rounded-sm
-            border
             bg-white
             p-4
             transition-all
@@ -160,7 +159,7 @@ export default function QuickLinkCard({
               className="
               mt-4
               text-center
-              text-sm
+              text-[12.2px]
               font-semibold
               text-slate-800
               "
@@ -172,7 +171,7 @@ export default function QuickLinkCard({
 
             {link.keyboardShortcut && (
               <p
-                className="
+                className="Qlink-shortcut
                 mt-1
                 text-center
                 text-[11px]
@@ -184,7 +183,7 @@ export default function QuickLinkCard({
             )}
 
             {/* Usage Analytics */}
-            <p className="mt-2 text-center text-xs text-muted-foreground">
+            <p className="Qlink-usage mt-2 text-center text-xs text-muted-foreground">
               Opened {usageCount}{" "}
               {usageCount === 1 ? "time" : "times"}
             </p>

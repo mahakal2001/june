@@ -785,7 +785,7 @@ export default function DepartmentSummaryDialog({
 
     </div>
 
-</div>
+    </div>
 
         </div>
 

@@ -12,7 +12,7 @@ function Topbar() {
      items-center justify-between border-b bg-white
       px-6">
 
-      <div className="menu-bar flex items-center gap-4">
+      <div className="menu-bar flex items-center gap-3">
 
         <MenuButton />
 

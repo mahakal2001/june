@@ -51,7 +51,7 @@ export default function DepartmentSummaryTable()
 
     <>
 
-    <Card className="rounded-sm border shadow-sm relative top-8">
+    <Card className="departmentSummerycard rounded-sm border shadow-sm">
 
       <CardHeader className="flex flex-row items-center justify-between">
 

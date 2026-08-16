@@ -1,0 +1,259 @@
+
+.Weeklychartsection,
+.Weeklytablesection,
+.Weeklylastsection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   TOP ROW
+   Screenshot:
+   Department-wise MIS | Doctor Performance | Top Procedures
+   Approx: 38% | 32% | 30%
+   ========================================================= */
+
+.Weeklychartsection {
+    margin-top: 2em;
+}
+
+.WeeklyTrend-card {
+    flex: 1.30 1 0;
+    min-width: 0;
+}
+
+.WeeklyDepartment-card {
+    flex: 1.10 1 0;
+    min-width: 0;
+}
+
+.WeeklyOccupancy-card {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   MIDDLE / TABLE ROW
+   Department | Doctor Performance | Top Procedures
+   ========================================================= */
+
+.Weeklytablesection {
+    margin-top: 12px;
+}
+
+.Weekly-departmentTable {
+    flex: 1.60 1 0;
+    min-width: 0;
+}
+
+.WeeklyDoctorPerformance {
+    flex: 1.10 1 0;
+    min-width: 0;
+}
+
+.WeeklyTopProcedures {
+    flex: 0.9 1 0;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   LAST ROW
+   Financial | Leakage | Alerts | Quick Links
+
+   Screenshot approx:
+   24% | 24% | 23% | 29%
+   ========================================================= */
+
+.Weeklylastsection {
+    margin-top: 12px;
+}
+
+.WeeklyFinancialhighlight {
+    flex: 1.18 1 0;
+    min-width: 0;
+}
+
+.WeeklyRevenueSection {
+    flex: 1.20 1 0;
+    min-width: 0;
+}
+
+.WeeklyMISalerts-card {
+    flex: 0.86 1 0;
+    min-width: 0;
+}
+
+.WeeklyMISquicklinks-card {
+    flex: 1.25 1 0;
+    min-width: 0;
+}
+
+.WeeklyMISquicklinks-card .Qlink-shortcut, .WeeklyMISquicklinks-card .Qlink-usage{
+    display: none !important;
+}
+
+.Weeklytablesection, .Weeklytablesection, .Weeklylastsection{
+    margin-top: 2em;
+}
+
+
+.WeeklyTrend-card>*,
+.WeeklyDepartment-card>*,
+.WeeklyOccupancy-card>*,
+.Weekly-departmentTable>*,
+.WeeklyDoctorPerformance>*,
+.WeeklyTopProcedures>*{
+    height:100%;
+}
+
+.WeeklyFinancialhighlight>*,
+.WeeklyRevenueSection>*,
+.WeeklyMISalerts-card>*, 
+.WeeklyMISquicklinks-card>*{
+    height: auto;
+}
+
+.WeeklyDoctorPerformance .Wdoctor-Table{
+    max-width: 100%;
+    width: 740px !important;
+}
+
+.WeeklyTopProcedures .Wprocedure-table{
+    max-width: 100%;
+    width: 540px !important;
+}
+
+.WeeklyTopProcedures .Procedure-cell{
+   width: 120px;
+   height: 4rem;
+}
+
+.WeeklyTopProcedures .count-cell{
+    width: 20px;
+}
+
+.WeeklyTopProcedures .Revenue-cell{
+    width: 120px;
+}
+
+.WeeklyTopProcedures .Growth-cell{
+    width: 20px;
+}
+
+.WeeklyMISalerts-card .alert-time{
+    visibility: hidden !important;
+}
+
+.WeeklyMISalerts-card .alerts-card{
+  width: 420px;
+}
+
+.WeeklyMISquicklinks-card .quickCard{
+    margin-bottom: 0 !important;
+}
+
+.WeeklyMISquicklinks-card .quickGrid{
+    grid-template-columns: repeat(3, 1fr) !important;
+    padding: 4px auto !important;
+}
+.WeeklyMISquicklinks-card .qickCard{
+    max-width: 100%;
+    width: 80%;
+}
+
+.WeeklyFinancialhighlight .WFinancial-Grid{
+   height: 8rem !important;
+}
+
+@media only screen and (max-width: 1445px){
+
+    .Weeklychartsection{
+        gap: 0px 1em;
+    }
+
+    .WeeklyTrend-card{
+       flex: 100%;
+       height: 520px;
+    }
+
+    .WeeklyDepartment-card, .WeeklyOccupancy-card{
+        flex: 100%;
+        width: 100%;
+    }
+
+    .WeeklyDepartment-card{
+       width: 100%;
+       height: auto;
+       margin: 2em auto !important;
+    }
+
+    
+.Weekly-departmentTable {
+    flex: 100%;
+    width: 100%;
+}
+
+.WeeklyDoctorPerformance {
+    flex: 100%;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.WeeklyTopProcedures {
+   flex: 100%;
+    width: 100%;
+     margin-top: 1em;
+}
+
+.WeeklyDoctorPerformance .Wdoctor-Table{
+    width: 100% !important;
+}
+
+.WeeklyTopProcedures .Wprocedure-table{
+    width: 100% !important;
+}
+
+    
+.WeeklyFinancialhighlight {
+    flex: 100%;
+    width: 100%;
+    
+}
+
+.WeeklyRevenueSection {
+    flex: 100%;
+    width: 100%;
+     margin-top: 1em;
+}
+
+.WeeklyMISalerts-card {
+    flex: 100%;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.WeeklyMISalerts-card .alerts-card{
+   width: 100%;
+}
+
+.WeeklyMISquicklinks-card {
+    flex: 100%;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.WeeklyMISquicklinks-card .quickGrid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.74em;
+    padding: 4px auto !important;
+}
+
+}

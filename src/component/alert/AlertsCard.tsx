@@ -36,7 +36,8 @@ export default function AlertsCard() {
 
             <Button
               variant="link"
-              className="p-0 h-auto text-blue-600 font-medium"
+              className="p-0 h-auto text-blue-600 font-medium
+                hover:text-blue-800 transition-all duration-300 ease-in"
               onClick={() => setOpen(true)}
             >
               View All Alerts

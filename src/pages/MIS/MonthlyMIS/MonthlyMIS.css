@@ -1,0 +1,259 @@
+
+.Monthlychartsection,
+.Monthlytablesection,
+.Monthlylastsection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   TOP ROW
+   Screenshot:
+   Department-wise MIS | Doctor Performance | Top Procedures
+   Approx: 38% | 32% | 30%
+   ========================================================= */
+
+.Monthlychartsection {
+    margin-top: 2em;
+}
+
+.MonthlyTrend-card {
+    flex: 1.30 1 0;
+    min-width: 0;
+}
+
+.MonthlyDepartment-card {
+    flex: 1.10 1 0;
+    min-width: 0;
+}
+
+.MonthlyOccupancy-card {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   MIDDLE / TABLE ROW
+   Department | Doctor Performance | Top Procedures
+   ========================================================= */
+
+.Monthlytablesection {
+    margin-top: 12px;
+}
+
+.Monthly-departmentTable {
+    flex: 1.60 1 0;
+    min-width: 0;
+}
+
+.MonthlyDoctorPerformance {
+    flex: 1.10 1 0;
+    min-width: 0;
+}
+
+.MonthlyTopProcedures {
+    flex: 0.9 1 0;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   LAST ROW
+   Financial | Leakage | Alerts | Quick Links
+
+   Screenshot approx:
+   24% | 24% | 23% | 29%
+   ========================================================= */
+
+.Monthlylastsection {
+    margin-top: 12px;
+}
+
+.MonthlyFinancialhighlight {
+    flex: 1.18 1 0;
+    min-width: 0;
+}
+
+.MonthlyRevenueSection {
+    flex: 1.20 1 0;
+    min-width: 0;
+}
+
+.MonthlyMISalerts-card {
+    flex: 0.86 1 0;
+    min-width: 0;
+}
+
+.MonthlyMISquicklinks-card {
+    flex: 1.25 1 0;
+    min-width: 0;
+}
+
+.MonthlyMISquicklinks-card .Qlink-shortcut, .MonthlyMISquicklinks-card .Qlink-usage{
+    display: none !important;
+}
+
+.Monthlytablesection, .Monthlytablesection, .Monthlylastsection{
+    margin-top: 2em;
+}
+
+
+.MonthlyTrend-card>*,
+.MonthlyDepartment-card>*,
+.MonthlyOccupancy-card>*,
+.Monthly-departmentTable>*,
+.MonthlyDoctorPerformance>*,
+.MonthlyTopProcedures>*{
+    height:100%;
+}
+
+.MonthlyFinancialhighlight>*,
+.MonthlyRevenueSection>*,
+.MonthlyMISalerts-card>*, 
+.MonthlyMISquicklinks-card>*{
+    height: auto;
+}
+
+.MonthlyDoctorPerformance .Mdoctor-Table{
+    max-width: 100%;
+    width: 740px !important;
+}
+
+.MonthlyTopProcedures .Mprocedure-table{
+    max-width: 100%;
+    width: 540px !important;
+}
+
+.MonthlyTopProcedures .Procedure-cell{
+   width: 120px;
+   height: 4rem;
+}
+
+.MonthlyTopProcedures .count-cell{
+    width: 20px;
+}
+
+.MonthlyTopProcedures .Revenue-cell{
+    width: 120px;
+}
+
+.MonthlyTopProcedures .Growth-cell{
+    width: 20px;
+}
+
+.MonthlyMISalerts-card .alert-time{
+    visibility: hidden !important;
+}
+
+.MonthlyMISalerts-card .alerts-card{
+  width: 420px;
+}
+
+.MonthlyMISquicklinks-card .quickCard{
+    margin-bottom: 0 !important;
+}
+
+.MonthlyMISquicklinks-card .quickGrid{
+    grid-template-columns: repeat(3, 1fr) !important;
+    padding: 4px auto !important;
+}
+.MonthlyMISquicklinks-card .qickCard{
+    max-width: 100%;
+    width: 80%;
+}
+
+.MonthlyFinancialhighlight .MFinancial-Grid{
+   height: 8rem !important;
+}
+
+@media only screen and (max-width: 1445px){
+
+    .Monthlychartsection{
+        gap: 0px 1em;
+    }
+
+    .MonthlyTrend-card{
+       flex: 100%;
+       height: 520px;
+    }
+
+    .MonthlyDepartment-card, .MonthlyOccupancy-card{
+        flex: 100%;
+        width: 100%;
+    }
+
+    .MonthlyDepartment-card{
+       width: 100%;
+       height: auto;
+       margin: 2em auto !important;
+    }
+
+    
+.Monthly-departmentTable {
+    flex: 100%;
+    width: 100%;
+}
+
+.MonthlyDoctorPerformance {
+    flex: 100%;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.MonthlyTopProcedures {
+   flex: 100%;
+    width: 100%;
+     margin-top: 1em;
+}
+
+.MonthlyDoctorPerformance .Mdoctor-Table{
+    width: 100% !important;
+}
+
+.MonthlyTopProcedures .Mprocedure-table{
+    width: 100% !important;
+}
+
+    
+.MonthlyFinancialhighlight {
+    flex: 100%;
+    width: 100%;
+    
+}
+
+.MonthlyRevenueSection {
+    flex: 100%;
+    width: 100%;
+     margin-top: 1em;
+}
+
+.MonthlyMISalerts-card {
+    flex: 100%;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.MonthlyMISalerts-card .alerts-card{
+   width: 100%;
+}
+
+.MonthlyMISquicklinks-card {
+    flex: 100%;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.MonthlyMISquicklinks-card .quickGrid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.74em;
+    padding: 4px auto !important;
+}
+
+}

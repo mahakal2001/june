@@ -43,7 +43,7 @@ export default function DepartmentDetailsDialog({
       onOpenChange={onOpenChange}
     >
       <DialogContent className="detailsdialog max-w-7xl rounded-sm text-center
-       pt-6 pb-6 bg-gradient-to-b from-blue-50 to-white">
+       pt-6 pb-6 bg-linear-to-b from-blue-50 to-white">
 
         <DialogHeader>
 
@@ -91,7 +91,7 @@ export default function DepartmentDetailsDialog({
 
         <div className="grid gap-5 mt-6 md:grid-cols-2 lg:grid-cols-3">
 
-          <Card className="bg-gradient-to-b from-blue-50 to-white">
+          <Card className="bg-linear-to-b from-blue-50 to-white">
 
             <CardContent className="p-5">
 
@@ -111,7 +111,7 @@ export default function DepartmentDetailsDialog({
 
           </Card>
 
-          <Card className="bg-gradient-to-b from-blue-50 to-white">
+          <Card className="bg-linear-to-b from-blue-50 to-white">
 
             <CardContent className="p-5">
 
@@ -131,7 +131,7 @@ export default function DepartmentDetailsDialog({
 
           </Card>
 
-          <Card className="bg-gradient-to-b from-blue-50 to-white">
+          <Card className="bg-linear-to-b from-blue-50 to-white">
 
             <CardContent className="p-5">
 
@@ -151,7 +151,7 @@ export default function DepartmentDetailsDialog({
 
           </Card>
 
-          <Card className="bg-gradient-to-b from-blue-50 to-white">
+          <Card className="bg-linear-to-b from-blue-50 to-white">
 
             <CardContent className="p-5">
 
@@ -173,7 +173,7 @@ export default function DepartmentDetailsDialog({
 
           </Card>
 
-          <Card className="bg-gradient-to-b from-blue-50 to-white">
+          <Card className="bg-linear-to-b from-blue-50 to-white">
 
             <CardContent className="p-5">
 
@@ -202,7 +202,7 @@ export default function DepartmentDetailsDialog({
 
           </Card>
 
-          <Card className="bg-gradient-to-b from-blue-50 to-white">
+          <Card className="bg-linear-to-b from-blue-50 to-white">
 
             <CardContent className="p-5">
 

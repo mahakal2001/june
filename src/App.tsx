@@ -1,5 +1,5 @@
 import DashboardLayout from "./layout/DashboardLayout";
-import Dashboard from "./pages/MIS/Dashboard";
+import Dashboard from "./pages/MIS/Dashboard/Dashboard";
 
 
 function App() {

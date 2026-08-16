@@ -225,12 +225,12 @@ export default function DailyDistributionChart() {
 
       <CardContent>
 
-        <div className="grid lg:grid-cols-2 gap-6 justify-center
-         distributionpie items-center">
+        <div className="flex gap-6
+         distributionpie items-center justify-start">
 
           <ChartContainer
             config={chartConfig}
-            className="VisitChart h-[260px]"
+            className="VisitChart w-[320px] h-[260px]"
           >
 
             <ResponsiveContainer width="100%" height="100%">

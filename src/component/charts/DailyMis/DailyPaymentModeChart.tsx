@@ -204,12 +204,12 @@ export default function DailyPaymentModeChart() {
 
       <CardContent>
 
-        <div className="grid lg:grid-cols-2 gap-8 
-         paymentpie items-center">
+        <div className="flex gap-6 
+         paymentpie items-center justify-start">
 
           <ChartContainer
             config={chartConfig}
-            className="h-[260px]"
+            className="paypiechart w-[320px] h-[260px]"
           >
 
             <ResponsiveContainer>
@@ -219,8 +219,8 @@ export default function DailyPaymentModeChart() {
                 <Pie
                   data={data}
                   dataKey="value"
-                  innerRadius={60}
-                  outerRadius={102}
+                  innerRadius={72}
+                  outerRadius={108}
                   startAngle={90}
                   endAngle={-270}
                   paddingAngle={2}
@@ -274,7 +274,7 @@ export default function DailyPaymentModeChart() {
 
           </ChartContainer>
 
-          <div className="space-y-5">
+          <div className="flex flex-col justify-center space-y-5">
 
             {data.map((item) => {
 
@@ -287,13 +287,15 @@ export default function DailyPaymentModeChart() {
 
                 <div
                   key={item.name}
-                  className="flex justify-between items-center"
+                  className="flex items-center
+                  justify-between gap-2 DistributionChartdata"
                 >
 
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center justify-between
+                  rounded-sm px-0 py-1 hover:bg-slate-50 transition-colors gap-4">
 
                     <div
-                      className="w-4 h-4 rounded-full"
+                      className="w-3 h-3 rounded-[4px] shadow-sm"
                       style={{
                         background: item.color,
                       }}
@@ -309,7 +311,7 @@ export default function DailyPaymentModeChart() {
 
                     {item.value.toLocaleString()}
 
-                    <span className="text-muted-foreground ml-2">
+                    <span className="pl-2 text-muted-foreground">
 
                       ({percent}%)
 
@@ -326,7 +328,7 @@ export default function DailyPaymentModeChart() {
 
         </div>
 
-        <p className="mt-6 text-xs text-muted-foreground italic">
+        <p className="pt-4 text-xs text-muted-foreground text-center italic">
 
           * Multiple payment modes in single bill
 

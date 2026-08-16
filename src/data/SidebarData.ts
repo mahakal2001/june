@@ -26,15 +26,15 @@ export const sidebarSections = [
         children: [
           {
             title: "Daily MIS Center",
-            href: "/dailyMIS",
+            href: "/DailyMIS",
           },
           {
             title: "Weekly MIS Center",
-            href: "/weekly",
+            href: "/WeeklyMIS",
           },
           {
             title: "Monthly MIS Center",
-            href: "/monthly",
+            href: "/MonthlyMIS",
           },
         ],
       },
@@ -48,7 +48,7 @@ export const sidebarSections = [
       {
         title: "Revenue Analytics",
         icon: BadgeDollarSign,
-        href: "/revenue",
+        href: "/RevenueAnalytics",
       },
       {
         title: "OPD Analytics",
